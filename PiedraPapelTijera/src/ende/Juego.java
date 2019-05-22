@@ -15,14 +15,14 @@ public class Juego
         Integer Rondasjugadas = 0;    // Número de rondas jugadas
         Integer EXITOS_jugador1=p1.exitos;
         Integer EXITOS_jugador2=p2.exitos;
-        Integer EmPaTeS = 0;
+        Integer Empates = 0;
         String opcion_JUGADOR1, opcion_JUGADOR2;
         
         // Bucle de juego
         do
         {
             System.out.println("***** Ronda: " + Rondasjugadas+" *********************\n");
-            System.out.println("Numero de empates: "+ EmPaTeS + "\n");
+            System.out.println("Numero de empates: "+ Empates + "\n");
             opcion_JUGADOR1=p1.opcion_al_azar();
             System.out.println("Jugador 1: " + opcion_JUGADOR1+"\t Jugador 1 - Partidas ganadas: " + EXITOS_jugador1);
             opcion_JUGADOR2 = p2.opcion_al_azar();
@@ -61,7 +61,7 @@ public class Juego
             }
             if(opcion_JUGADOR1==opcion_JUGADOR2)
             {
-            	EmPaTeS++;
+            	Empates++;
                 System.out.println("\n\t\t\t Empate \n");
             }
             Rondasjugadas++;
